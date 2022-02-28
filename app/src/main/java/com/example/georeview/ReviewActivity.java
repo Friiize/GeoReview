@@ -44,6 +44,6 @@ public class ReviewActivity extends AppCompatActivity implements CustomRecyclerV
     @Override
     public void onItemClick(int position, ArrayList<ItemModal> itemModalArrayList) {
         Intent i = new Intent(this, EditItemActivity.class);
-        i.putExtra("items", itemModalArrayList);
+        i.putExtra("item", itemModalArrayList.get(position));
     }
 }
